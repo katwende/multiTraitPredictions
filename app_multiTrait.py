@@ -130,10 +130,8 @@ iface = gr.Interface(
     description="Upload a Hyperspectral scene with a corresponding .CSV for the available bands, and the app will generate the trait prediction.",
 )
 
-# Launch the Gradio app
-iface.launch()
-
-
-
+if __name__ == "__main__":
+    # Gradio launch
+    iface.launch()
 
 
